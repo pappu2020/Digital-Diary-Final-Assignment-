@@ -1,0 +1,12 @@
+F:\C#\Digital-Diary-Final-Assignment-\Digital Diary\bin\Debug\Digital Diary.exe.config
+F:\C#\Digital-Diary-Final-Assignment-\Digital Diary\bin\Debug\Digital Diary.exe
+F:\C#\Digital-Diary-Final-Assignment-\Digital Diary\bin\Debug\Digital Diary.pdb
+F:\C#\Digital-Diary-Final-Assignment-\Digital Diary\obj\Debug\Digital Diary.csprojAssemblyReference.cache
+F:\C#\Digital-Diary-Final-Assignment-\Digital Diary\obj\Debug\Digital_Diary.LogIn.resources
+F:\C#\Digital-Diary-Final-Assignment-\Digital Diary\obj\Debug\Digital_Diary.Properties.Resources.resources
+F:\C#\Digital-Diary-Final-Assignment-\Digital Diary\obj\Debug\Digital Diary.csproj.GenerateResource.cache
+F:\C#\Digital-Diary-Final-Assignment-\Digital Diary\obj\Debug\Digital Diary.csproj.CoreCompileInputs.cache
+F:\C#\Digital-Diary-Final-Assignment-\Digital Diary\obj\Debug\Digital Diary.exe
+F:\C#\Digital-Diary-Final-Assignment-\Digital Diary\obj\Debug\Digital Diary.pdb
+F:\C#\Digital-Diary-Final-Assignment-\Digital Diary\obj\Debug\Digital_Diary.UserRegistration.resources
+F:\C#\Digital-Diary-Final-Assignment-\Digital Diary\obj\Debug\Digital_Diary.Home.resources
