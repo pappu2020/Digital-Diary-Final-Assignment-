@@ -104,9 +104,11 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Images\download.jpg" />
     <Content Include="Images\images.jpg" />
     <Content Include="Images\pexels-photo-957201.jpeg" />
     <Content Include="Images\photo-1579280921028-21d4e5005a77.jpg" />
+    <Content Include="Images\Spotligh_Auth_Serv_SciPod.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

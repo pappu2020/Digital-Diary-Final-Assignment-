@@ -21,5 +21,12 @@ namespace Digital_Diary
         {
             Application.Exit();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            LogIn login = new LogIn();
+            login.Show();
+            this.Hide();
+        }
     }
 }

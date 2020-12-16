@@ -46,7 +46,7 @@ namespace Digital_Diary
             this.label8 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
-            this.addUserbutton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -204,16 +204,16 @@ namespace Digital_Diary
             this.label9.TabIndex = 15;
             this.label9.Text = "Gender";
             // 
-            // addUserbutton
+            // button1
             // 
-            this.addUserbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addUserbutton.Location = new System.Drawing.Point(224, 644);
-            this.addUserbutton.Name = "addUserbutton";
-            this.addUserbutton.Size = new System.Drawing.Size(194, 40);
-            this.addUserbutton.TabIndex = 18;
-            this.addUserbutton.Text = "Submit";
-            this.addUserbutton.UseVisualStyleBackColor = true;
-            this.addUserbutton.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(224, 644);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(194, 40);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "Submit";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -245,7 +245,7 @@ namespace Digital_Diary
             this.ClientSize = new System.Drawing.Size(716, 696);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.addUserbutton);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label8);
@@ -291,7 +291,7 @@ namespace Digital_Diary
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button addUserbutton;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ComboBox comboBox1;
     }

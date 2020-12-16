@@ -15,6 +15,7 @@ namespace Digital_Diary
         public UserRegistration()
         {
             InitializeComponent();
+           
         }
 
         private void UserRegistration_Load(object sender, EventArgs e)
@@ -33,18 +34,24 @@ namespace Digital_Diary
             int result = user.AddNewUser(NameTextBox.Text,UserNametextBox.Text,PasswordtextBox.Text, EmailtextBox.Text,dateTimePicker1.Text,comboBox1.Text);
             if (result > 0)
             {
-                MessageBox.Show("New product added successfully");
+                MessageBox.Show("Registration successfully");
+                NameTextBox.Text = UserNametextBox.Text = PasswordtextBox.Text =ConfirmPasswordtextBox.Text= EmailtextBox.Text = dateTimePicker1.Text = comboBox1.Text = string.Empty;
+
 
             }
             else
             {
-                MessageBox.Show("Error in adding new product");
+                MessageBox.Show("Error!!!");
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            LogIn login = new LogIn();
+            login.Show();
+            this.Hide();
         }
+
+        
     }
 }
