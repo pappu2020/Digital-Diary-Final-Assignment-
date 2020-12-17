@@ -47,7 +47,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheckEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckEvent.Designer.cs">
+      <DependentUpon>CheckEvent.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataAccess.cs" />
+    <Compile Include="EventDataAccess.cs" />
+    <Compile Include="EventEntities.cs" />
+    <Compile Include="EventService.cs" />
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +80,9 @@
       <DependentUpon>UserRegistration.cs</DependentUpon>
     </Compile>
     <Compile Include="UserService.cs" />
+    <EmbeddedResource Include="CheckEvent.resx">
+      <DependentUpon>CheckEvent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -108,6 +120,7 @@
     <Content Include="Images\images.jpg" />
     <Content Include="Images\pexels-photo-957201.jpeg" />
     <Content Include="Images\photo-1579280921028-21d4e5005a77.jpg" />
+    <Content Include="Images\registration-register-logo-or-label-diary-note-vector-21805977.jpg" />
     <Content Include="Images\Spotligh_Auth_Serv_SciPod.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
