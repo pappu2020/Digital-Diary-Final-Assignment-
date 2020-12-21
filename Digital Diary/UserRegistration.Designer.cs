@@ -104,6 +104,7 @@ namespace Digital_Diary
             this.PasswordtextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordtextBox.Location = new System.Drawing.Point(264, 314);
             this.PasswordtextBox.Name = "PasswordtextBox";
+            this.PasswordtextBox.PasswordChar = '*';
             this.PasswordtextBox.Size = new System.Drawing.Size(295, 34);
             this.PasswordtextBox.TabIndex = 6;
             // 
@@ -123,6 +124,7 @@ namespace Digital_Diary
             this.ConfirmPasswordtextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConfirmPasswordtextBox.Location = new System.Drawing.Point(264, 377);
             this.ConfirmPasswordtextBox.Name = "ConfirmPasswordtextBox";
+            this.ConfirmPasswordtextBox.PasswordChar = '*';
             this.ConfirmPasswordtextBox.Size = new System.Drawing.Size(295, 34);
             this.ConfirmPasswordtextBox.TabIndex = 8;
             // 
@@ -161,6 +163,7 @@ namespace Digital_Diary
             this.UserNametextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserNametextBox.Location = new System.Drawing.Point(264, 259);
             this.UserNametextBox.Name = "UserNametextBox";
+            this.UserNametextBox.PasswordChar = '*';
             this.UserNametextBox.Size = new System.Drawing.Size(295, 34);
             this.UserNametextBox.TabIndex = 12;
             // 

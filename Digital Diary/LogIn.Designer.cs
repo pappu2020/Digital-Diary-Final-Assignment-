@@ -110,6 +110,7 @@ namespace Digital_Diary
             this.UserPasswordtextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserPasswordtextBox.Location = new System.Drawing.Point(411, 348);
             this.UserPasswordtextBox.Name = "UserPasswordtextBox";
+            this.UserPasswordtextBox.PasswordChar = '*';
             this.UserPasswordtextBox.Size = new System.Drawing.Size(268, 34);
             this.UserPasswordtextBox.TabIndex = 5;
             // 

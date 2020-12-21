@@ -18,6 +18,7 @@ namespace Digital_Diary
             
             InitializeComponent();
             Deletebutton.Click += this.RefreshGridView;
+            Modifybutton.Click += this.RefreshGridView;
         }
 
 
