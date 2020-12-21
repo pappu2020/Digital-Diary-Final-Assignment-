@@ -35,6 +35,8 @@ namespace Digital_Diary
             return result;
         }
 
+        
+
         public void Dispose()
         {
             this.connection.Close();

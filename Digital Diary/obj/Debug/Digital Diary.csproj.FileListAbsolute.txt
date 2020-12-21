@@ -10,4 +10,3 @@ F:\C#\Digital-Diary-Final-Assignment-\Digital Diary\obj\Debug\Digital Diary.cspr
 F:\C#\Digital-Diary-Final-Assignment-\Digital Diary\obj\Debug\Digital Diary.csproj.CoreCompileInputs.cache
 F:\C#\Digital-Diary-Final-Assignment-\Digital Diary\obj\Debug\Digital Diary.exe
 F:\C#\Digital-Diary-Final-Assignment-\Digital Diary\obj\Debug\Digital Diary.pdb
-F:\C#\Digital-Diary-Final-Assignment-\Digital Diary\obj\Debug\Digital Diary.csprojAssemblyReference.cache

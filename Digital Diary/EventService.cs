@@ -21,7 +21,10 @@ namespace Digital_Diary
                 Date = date,
                 EventName = eventName,
                 Description = description,
-                Importance = importance
+                Importance = importance,
+               
+                
+                
 
             };
             eventDataAccess = new EventDataAccess();
@@ -35,5 +38,11 @@ namespace Digital_Diary
            
             return this.eventDataAccess.GellAllData();
         }
+
+        public int DeleteEvents(int id)
+        {
+            return this.eventDataAccess.DeleteEvents(id);
+        }
+
     }
 }

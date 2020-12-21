@@ -12,18 +12,26 @@ namespace Digital_Diary
 {
     public partial class CheckEvent : Form
     {
-        
+       
         public CheckEvent()
         {
             
             InitializeComponent();
+            Deletebutton.Click += this.RefreshGridView;
         }
 
 
-        EventService es = new EventService();
+        
+
         private void CheckEvent_Load(object sender, EventArgs e)
         {
-            
+            EventService es = new EventService();
+            eventDataLoadGridView.DataSource = es.GetDataList();
+        }
+
+        private void RefreshGridView(object sender, EventArgs e)
+        {
+            EventService es = new EventService();
             eventDataLoadGridView.DataSource = es.GetDataList();
         }
 
@@ -44,6 +52,21 @@ namespace Digital_Diary
             Home hm = new Home();
             hm.Show();
             this.Hide();
+        }
+
+        private void Deletebutton_Click(object sender, EventArgs e)
+        {
+            EventService es = new EventService();
+            int result = es.DeleteEvents(Convert.ToInt32(DeleteEventTextBox.Text));
+            if (result > 0)
+            {
+                MessageBox.Show("Category deleted successfully");
+                DeleteEventTextBox.Text = string.Empty;
+            }
+            else
+            {
+                MessageBox.Show("Error in deleting category");
+            }
         }
     }
 }

@@ -1,21 +1,36 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Digital_Diary
 {
     public partial class LogIn : Form
     {
+
+       
         public LogIn()
         {
             InitializeComponent();
+            
+            
         }
+
+        public TextBox UserNameText
+        {
+            get { return this.UserNametextBox; }
+        }
+
+
+
 
         private void LogIn_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -41,9 +56,11 @@ namespace Digital_Diary
                 bool result = userService.LoginValidation(UserNametextBox.Text, UserPasswordtextBox.Text);
                 if (result)
                 {
-                    Home home = new Home();
-                    home.Show();
+                    Home hm = new Home();
+                    hm.Show();
                     this.Hide();
+
+
                 }
                 else
                 {

@@ -1,7 +1,7 @@
 ﻿
 namespace Digital_Diary
 {
-    partial class LogIn
+    public partial class LogIn
     {
         /// <summary>
         /// Required designer variable.
@@ -27,7 +27,7 @@ namespace Digital_Diary
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        public void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogIn));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();

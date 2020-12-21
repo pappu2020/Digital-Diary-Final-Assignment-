@@ -12,10 +12,13 @@ namespace Digital_Diary
 {
     public partial class Home : Form
     {
+        
+       
         public Home()
         {
             InitializeComponent();
             
+        
         }
 
         private void Home_FormClosing(object sender, FormClosingEventArgs e)
@@ -30,6 +33,8 @@ namespace Digital_Diary
         private void Addbutton_Click(object sender, EventArgs e)
         {
             EventService eventService = new EventService();
+            
+            
             int result = eventService.AddnewEntities(dateTimePicker1.Text, EventNametextBox.Text, DescriptiontextBox.Text, comboBox1.Text);
             if (result > 0)
             {

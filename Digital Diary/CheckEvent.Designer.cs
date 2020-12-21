@@ -32,16 +32,18 @@ namespace Digital_Diary
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CheckEvent));
             this.Backbutton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.eventDataLoadGridView = new System.Windows.Forms.DataGridView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.Modifybutton = new System.Windows.Forms.Button();
             this.Deletebutton = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.DeleteEventTextBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.eventDataLoadGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eventDataLoadGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // Backbutton
@@ -64,6 +66,26 @@ namespace Digital_Diary
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1459, 107);
             this.panel1.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Mistral", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(750, 23);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(308, 71);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Digital Diary";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(871, -44);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(600, 200);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -89,26 +111,6 @@ namespace Digital_Diary
             this.eventDataLoadGridView.Size = new System.Drawing.Size(611, 545);
             this.eventDataLoadGridView.TabIndex = 2;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(871, -44);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(600, 200);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Mistral", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(750, 23);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(308, 71);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Digital Diary";
-            // 
             // Modifybutton
             // 
             this.Modifybutton.Font = new System.Drawing.Font("Microsoft Uighur", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -122,17 +124,18 @@ namespace Digital_Diary
             // Deletebutton
             // 
             this.Deletebutton.Font = new System.Drawing.Font("Microsoft Uighur", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Deletebutton.Location = new System.Drawing.Point(875, 141);
+            this.Deletebutton.Location = new System.Drawing.Point(1041, 356);
             this.Deletebutton.Name = "Deletebutton";
             this.Deletebutton.Size = new System.Drawing.Size(194, 66);
             this.Deletebutton.TabIndex = 4;
             this.Deletebutton.Text = "Delete Event";
             this.Deletebutton.UseVisualStyleBackColor = true;
+            this.Deletebutton.Click += new System.EventHandler(this.Deletebutton_Click);
             // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Uighur", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(1087, 141);
+            this.button3.Location = new System.Drawing.Point(648, 539);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(194, 66);
             this.button3.TabIndex = 5;
@@ -140,11 +143,31 @@ namespace Digital_Diary
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // DeleteEventTextBox
+            // 
+            this.DeleteEventTextBox.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteEventTextBox.Location = new System.Drawing.Point(648, 368);
+            this.DeleteEventTextBox.Name = "DeleteEventTextBox";
+            this.DeleteEventTextBox.Size = new System.Drawing.Size(348, 42);
+            this.DeleteEventTextBox.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(641, 308);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(286, 40);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Enter the event ID";
+            // 
             // CheckEvent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1293, 660);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.DeleteEventTextBox);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.Deletebutton);
             this.Controls.Add(this.Modifybutton);
@@ -158,9 +181,10 @@ namespace Digital_Diary
             this.Load += new System.EventHandler(this.CheckEvent_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.eventDataLoadGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eventDataLoadGridView)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -175,5 +199,7 @@ namespace Digital_Diary
         private System.Windows.Forms.Button Modifybutton;
         private System.Windows.Forms.Button Deletebutton;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox DeleteEventTextBox;
+        private System.Windows.Forms.Label label3;
     }
 }
