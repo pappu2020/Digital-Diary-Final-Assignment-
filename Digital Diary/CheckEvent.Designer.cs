@@ -41,6 +41,8 @@ namespace Digital_Diary
             this.button3 = new System.Windows.Forms.Button();
             this.DeleteEventTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eventDataLoadGridView)).BeginInit();
@@ -48,7 +50,7 @@ namespace Digital_Diary
             // 
             // Backbutton
             // 
-            this.Backbutton.Location = new System.Drawing.Point(1140, 604);
+            this.Backbutton.Location = new System.Drawing.Point(1226, 613);
             this.Backbutton.Name = "Backbutton";
             this.Backbutton.Size = new System.Drawing.Size(141, 44);
             this.Backbutton.TabIndex = 0;
@@ -110,21 +112,23 @@ namespace Digital_Diary
             this.eventDataLoadGridView.RowTemplate.Height = 24;
             this.eventDataLoadGridView.Size = new System.Drawing.Size(611, 545);
             this.eventDataLoadGridView.TabIndex = 2;
+            this.eventDataLoadGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.eventDataLoadGridView_CellClick);
             // 
             // Modifybutton
             // 
             this.Modifybutton.Font = new System.Drawing.Font("Microsoft Uighur", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Modifybutton.Location = new System.Drawing.Point(658, 141);
+            this.Modifybutton.Location = new System.Drawing.Point(1062, 256);
             this.Modifybutton.Name = "Modifybutton";
-            this.Modifybutton.Size = new System.Drawing.Size(194, 66);
+            this.Modifybutton.Size = new System.Drawing.Size(182, 77);
             this.Modifybutton.TabIndex = 3;
-            this.Modifybutton.Text = "Modify Event";
+            this.Modifybutton.Text = "Modify";
             this.Modifybutton.UseVisualStyleBackColor = true;
+            this.Modifybutton.Click += new System.EventHandler(this.Modifybutton_Click);
             // 
             // Deletebutton
             // 
             this.Deletebutton.Font = new System.Drawing.Font("Microsoft Uighur", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Deletebutton.Location = new System.Drawing.Point(1041, 356);
+            this.Deletebutton.Location = new System.Drawing.Point(1017, 485);
             this.Deletebutton.Name = "Deletebutton";
             this.Deletebutton.Size = new System.Drawing.Size(194, 66);
             this.Deletebutton.TabIndex = 4;
@@ -135,7 +139,7 @@ namespace Digital_Diary
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Uighur", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(648, 539);
+            this.button3.Location = new System.Drawing.Point(629, 600);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(194, 66);
             this.button3.TabIndex = 5;
@@ -146,7 +150,7 @@ namespace Digital_Diary
             // DeleteEventTextBox
             // 
             this.DeleteEventTextBox.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeleteEventTextBox.Location = new System.Drawing.Point(648, 368);
+            this.DeleteEventTextBox.Location = new System.Drawing.Point(629, 497);
             this.DeleteEventTextBox.Name = "DeleteEventTextBox";
             this.DeleteEventTextBox.Size = new System.Drawing.Size(348, 42);
             this.DeleteEventTextBox.TabIndex = 6;
@@ -155,17 +159,38 @@ namespace Digital_Diary
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(641, 308);
+            this.label3.Location = new System.Drawing.Point(629, 442);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(286, 40);
             this.label3.TabIndex = 7;
             this.label3.Text = "Enter the event ID";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(629, 123);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(738, 40);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Select the event ID from Data sheet then update";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(636, 169);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(399, 263);
+            this.textBox1.TabIndex = 8;
+            // 
             // CheckEvent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1293, 660);
+            this.ClientSize = new System.Drawing.Size(1374, 660);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.DeleteEventTextBox);
             this.Controls.Add(this.button3);
@@ -201,5 +226,7 @@ namespace Digital_Diary
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox DeleteEventTextBox;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

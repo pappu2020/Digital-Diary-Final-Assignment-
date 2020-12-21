@@ -55,6 +55,14 @@ namespace Digital_Diary
             return result;
         }
 
+        public int UpdateEvent(EventEntities en)
+        {
+            string sql = "UPDATE Events SET Description='" + en.Description + "' WHERE EventId=" + en.EventId;
+            int result = this.dataaccess.ExecuteQuery(sql);
+            return result;
+        }
+        
+
 
     }
 }

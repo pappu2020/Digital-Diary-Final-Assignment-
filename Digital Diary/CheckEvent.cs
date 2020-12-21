@@ -68,5 +68,29 @@ namespace Digital_Diary
                 MessageBox.Show("Error in deleting category");
             }
         }
+        int id = 0;
+        
+
+        private void eventDataLoadGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            id = (int)eventDataLoadGridView.Rows[e.RowIndex].Cells[0].Value;
+            textBox1.Text = eventDataLoadGridView.Rows[e.RowIndex].Cells[3].Value.ToString();
+        }
+
+        private void Modifybutton_Click(object sender, EventArgs e)
+        {
+            EventService en = new EventService();
+            int result = en.UpdateEvent(id, textBox1.Text);
+            if (result > 0)
+            {
+                MessageBox.Show("Your event description updated successfully");
+                textBox1.Text = string.Empty;
+            }
+            else
+            {
+                MessageBox.Show("Error in updating Description");
+            }
+
+        }
     }
 }

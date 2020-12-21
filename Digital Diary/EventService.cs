@@ -44,5 +44,15 @@ namespace Digital_Diary
             return this.eventDataAccess.DeleteEvents(id);
         }
 
+        public int UpdateEvent(int id, string eventDescription)
+        {
+            EventEntities en = new EventEntities()
+            {
+                EventId = id,
+                Description = eventDescription
+            };
+            return this.eventDataAccess.UpdateEvent(en);
+        }
+
     }
 }
